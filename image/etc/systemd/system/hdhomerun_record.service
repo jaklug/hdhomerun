@@ -1,6 +1,13 @@
 [Unit]
 Description=HD Homerun Record Server
 
+# WorkingDirecotry contains the
+# executable in the hdhomerun_record
+# installation.  Should match the
+# directory used in ExecStart.
+# User and Group should be changed
+# to the owner and group of the service
+# files.
 [Service]
 Type=exec
 WorkingDirectory=/opt/hdhomerun
