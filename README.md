@@ -25,7 +25,9 @@
 
    ```
    systemctl status hdhomerun_record.service
+   ```
 or
+   ```
    /opt/hdhomerun/hdhomerun_record status
    ```
 
