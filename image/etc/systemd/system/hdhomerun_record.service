@@ -1,0 +1,16 @@
+[Unit]
+Description=HD Homerun Record Server
+
+[Service]
+Type=exec
+WorkingDirectory=/opt/hdhomerun
+ExecStart=/opt/hdhomerun/hdhomerun_record start
+ExitType=cgroup
+RestartKillSignal=SIGTERM
+RestartSec=0
+Restart=on-failure
+User=jklug
+Group=jklug
+
+[Install]
+WantedBy=multi-user.target
